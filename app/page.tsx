@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import HeroImage from "@/public/hero.png";
+
 function Header() {
   return (
     <header className="sticky bg-white top-0 text-gray-600 body-font px-3 md:mx-24 ">
@@ -61,10 +63,12 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
+            <Image
+              height={1200}
+              width={800}
               className="object-cover object-center rounded"
               alt="hero"
-              src="https://dummyimage.com/720x600"
+              src={HeroImage}
             />
           </div>
         </div>
